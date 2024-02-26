@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  padding: 13px 64px;
+  border-radius: 30px;
+  background-color: var(--color-White);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
+  a {
+    color: var(--color-Violet);
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: var(--color-Soft-Magenta);
+
+    a {
+      color: var(--color-White);
+    }
+  }
+}
